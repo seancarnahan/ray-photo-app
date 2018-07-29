@@ -12,6 +12,7 @@ class Home extends Component{
     return(
       <div>
         <TitleHeader/>
+        <br/>
         <FeaturedPhotoViewer/>
       </div>
     );
