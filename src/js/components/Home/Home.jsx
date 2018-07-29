@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 
 import TitleHeader from './../titleHeader.jsx';
+import FeaturedPhotoViewer from './../featuredPhotoViewer.jsx';
 
 class Home extends Component{
   constructor(props){
@@ -11,7 +12,7 @@ class Home extends Component{
     return(
       <div>
         <TitleHeader/>
-
+        <FeaturedPhotoViewer/>
       </div>
     );
   }

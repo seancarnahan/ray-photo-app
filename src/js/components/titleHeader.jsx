@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../css/test.css'
+import '../../css/style.css';
 const TitleHeader = () => {
   return(
     <div>
