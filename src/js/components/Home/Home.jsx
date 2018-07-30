@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 
 import TitleHeader from './../titleHeader.jsx';
 import FeaturedPhotoViewer from './../featuredPhotoViewer.jsx';
+import NavbarHorizontal from './../navbarHorizontal.jsx'
 
 class Home extends Component{
   constructor(props){
@@ -13,6 +14,7 @@ class Home extends Component{
       <div>
         <TitleHeader/>
         <br/>
+        <NavbarHorizontal/>
         <FeaturedPhotoViewer/>
       </div>
     );

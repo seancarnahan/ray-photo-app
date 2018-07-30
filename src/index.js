@@ -11,14 +11,12 @@ class App extends Component {
     super(props);
 
     this.state = {
-      albumType: ''
+      currentPage: ''
     };
   }
 
   render(){
     return(
-      <Home/>
-      /*
       <Router>
         <div>
           <Route exact path="/" component={Home} />
@@ -26,7 +24,6 @@ class App extends Component {
           <Route path="/AboutMe" component={AboutMe} />
         </div>
       </Router>
-      */
     );
   }
 }
