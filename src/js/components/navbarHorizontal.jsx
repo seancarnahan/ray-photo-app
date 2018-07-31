@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 import {Grid} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 class NavbarHorizontal extends Component {
   constructor(props){
@@ -11,9 +12,13 @@ class NavbarHorizontal extends Component {
   render(){
     return(
       <Grid>
-        <hr className="style18"/>
-        <ul class>
-
+        <hr className="style15"/>
+        <ul className="navbar-wrapper">
+          <li className="nav-item">Home</li>
+          <li className="nav-item travel-drop">Travel</li>
+          <li className="nav-item">Sunsets</li>
+          <li className="nav-item">Friends</li>
+          <li className="nav-item">About Me</li>
         </ul>
       </Grid>
 
