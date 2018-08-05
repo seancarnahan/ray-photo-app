@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
-import {Grid} from 'react-bootstrap';
-import {Link} from 'react-router-dom';
+import { Grid } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 class NavbarHorizontal extends Component {
   constructor(props){
@@ -14,14 +14,23 @@ class NavbarHorizontal extends Component {
       <Grid>
         <hr className="style15"/>
         <ul className="navbar-wrapper">
-          <li className="nav-item">Home</li>
-          <li className="nav-item travel-drop">Travel</li>
-          <li className="nav-item">Sunsets</li>
-          <li className="nav-item">Friends</li>
-          <li className="nav-item">About Me</li>
+          <Link to="/home">
+            <li className="nav-item">Home</li>
+          </Link>
+          <Link to="/gallery">
+            <li className="nav-item travel-drop">Travel</li>
+          </Link>
+          <Link to="/gallery">
+            <li className="nav-item">Sunsets</li>
+          </Link>
+          <Link to="/gallery">
+            <li className="nav-item">Friends</li>
+          </Link>
+          <Link to="/about-me">
+            <li className="nav-item">About Me</li>
+          </Link>
         </ul>
       </Grid>
-
     );
   }
 }

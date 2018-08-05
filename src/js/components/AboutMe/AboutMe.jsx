@@ -12,8 +12,8 @@ class AboutMe extends Component{
           About me Page
         </h1>
       </div>
-
     );
   }
 }
+
 export default AboutMe;
