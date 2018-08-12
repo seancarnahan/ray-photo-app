@@ -9,7 +9,7 @@ class Gallery extends Component{
     return(
       <div>
         <h1>
-          Gallery Page U fuck
+          all the galleries here bud
         </h1>
       </div>
     );
