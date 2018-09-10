@@ -1,4 +1,7 @@
 import React,{Component} from 'react';
+import {Grid} from 'react-bootstrap';
+
+import TitleHeader from './../titleHeader.jsx';
 
 class Gallery extends Component{
   constructor(props){
@@ -7,10 +10,12 @@ class Gallery extends Component{
 
   render(){
     return(
-      <div>
-        <h1>
-          all the galleries here bud
-        </h1>
+      <div className="gallery__wrapper">
+        <Grid>
+          <TitleHeader/>
+          
+        </Grid>
+
       </div>
     );
   }
