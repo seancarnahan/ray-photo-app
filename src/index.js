@@ -8,13 +8,13 @@ class App extends Component {
     super(props);
 
     this.state = {
-      currentPage: ''
+      currentPage: 'home'
     };
   }
 
   render(){
     return(
-      <Routes/>
+      <Routes currentPage={currentPage}/>
     );
   }
 }

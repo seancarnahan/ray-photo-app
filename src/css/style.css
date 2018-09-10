@@ -236,3 +236,8 @@ nav.navbar, .navbar-default {
 .contact__info-container {
 
 }
+
+.show-grid {
+  margin: 0;
+  padding: 0;
+}

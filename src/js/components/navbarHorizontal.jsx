@@ -7,8 +7,14 @@ class NavbarHorizontal extends Component {
   constructor(props){
     super(props);
 
-    albumType: ''
   }
+
+  handleClick = (e) => {
+    this.setState({
+
+    });
+  }
+
   render(){
     return(
       <Grid>
