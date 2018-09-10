@@ -6,9 +6,15 @@ import TitleHeader from './../titleHeader.jsx';
 class Gallery extends Component{
   constructor(props){
     super(props);
+    /*
+    const {currentPage} = props.location.state
+    console.log(currentPage);
+    */
 
-    
   }
+
+
+
 
   render(){
     return(
@@ -22,9 +28,6 @@ class Gallery extends Component{
               {}
             </h1>
           </Col>
-
-
-
         </Row>
         <Row className="show-grid">
           <Col xs={6} md={4} className="vertical-navabr__wrapper">

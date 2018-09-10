@@ -7,12 +7,7 @@ class NavbarHorizontal extends Component {
   constructor(props){
     super(props);
 
-  }
-
-  handleClick = (e) => {
-    this.setState({
-
-    });
+    currentPage: ''
   }
 
   render(){
@@ -20,19 +15,19 @@ class NavbarHorizontal extends Component {
       <Grid>
         <hr className="style15"/>
         <ul className="navbar-wrapper">
-          <Link to="/home">
+          <Link to={{ pathname: '/home', state: {currentPage: 'home'} }}>
             <li className="nav-item">Home</li>
           </Link>
-          <Link to="/gallery">
-            <li className="nav-item travel-drop">Travel</li>
+          <Link to={{ pathname: "/gallery", state: {currentPage: 'gallery'} }}>
+            <li className="nav-item travel-drop" >Travel</li>
           </Link>
-          <Link to="/gallery">
-            <li className="nav-item">Sunsets</li>
+          <Link to={{ pathname: "/gallery", state: {currentPage: 'gallery'} }}>
+            <li className="nav-item" >Sunsets</li>
           </Link>
-          <Link to="/gallery">
+          <Link to={{ pathname: "/gallery", state: {currentPage: 'gallery'} }}>
             <li className="nav-item">Friends</li>
           </Link>
-          <Link to="/about-me">
+          <Link to={{ pathname: "/about-me", state: {currentPage: 'about-me'} }}>
             <li className="nav-item">About Me</li>
           </Link>
         </ul>
