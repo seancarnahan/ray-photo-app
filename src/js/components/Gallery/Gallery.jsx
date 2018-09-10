@@ -7,19 +7,19 @@ class Gallery extends Component {
   constructor(props){
     super(props);
 
-    this.state = { currentPage: '' };
+    this.state = { albumType: '' };
   }
 
-  componentdidMount() {
-    const {selectedPage} = props.location.state;
-    console.log(selectedPage);
+  componentDidMount() {
+    const {selectedPage} = this.props.location.state;
 
     this.setState({
-      currentPage: selectedPage
+      albumType: selectedPage
     });
   }
 
-  render() {
+
+  render(){
     return(
       <div className="gallery__wrapper">
         <TitleHeader/>
@@ -27,7 +27,7 @@ class Gallery extends Component {
           <Col xs={6} md={4}/>
           <Col xs={12} md={8}>
             <h1 className="sub-header__default">
-              Foo
+              {this.state.albumType}
             </h1>
           </Col>
         </Row>
