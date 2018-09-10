@@ -7,27 +7,28 @@ class NavbarHorizontal extends Component {
   constructor(props){
     super(props);
 
-    currentPage: ''
-  }
+    this.state = {
+      selectedPage: 'home'
+    };
 
-  render(){
+  render() {
     return(
       <Grid>
         <hr className="style15"/>
         <ul className="navbar-wrapper">
-          <Link to={{ pathname: '/home', state: {currentPage: 'home'} }}>
+          <Link to={{ pathname: '/home', state: {selectedPage: 'home'} }}>
             <li className="nav-item">Home</li>
           </Link>
-          <Link to={{ pathname: "/gallery", state: {currentPage: 'gallery'} }}>
+          <Link to={{ pathname: "/gallery", state: {selectedPage: 'gallery'} }}>
             <li className="nav-item travel-drop" >Travel</li>
           </Link>
-          <Link to={{ pathname: "/gallery", state: {currentPage: 'gallery'} }}>
+          <Link to={{ pathname: "/gallery", state: {selectedPage: 'gallery'} }}>
             <li className="nav-item" >Sunsets</li>
           </Link>
-          <Link to={{ pathname: "/gallery", state: {currentPage: 'gallery'} }}>
+          <Link to={{ pathname: "/gallery", state: {selectedPage: 'gallery'} }}>
             <li className="nav-item">Friends</li>
           </Link>
-          <Link to={{ pathname: "/about-me", state: {currentPage: 'about-me'} }}>
+          <Link to={{ pathname: "/about-me", state: {selectedPage: 'about-me'} }}>
             <li className="nav-item">About Me</li>
           </Link>
         </ul>
