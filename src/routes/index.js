@@ -4,10 +4,10 @@ import {
   Route,
   Switch } from 'react-router-dom';
 
-import Home from './../js/components/Home/Home';
-import Gallery from './../js/components/Gallery/Gallery';
-import AboutMe from './../js/components/AboutMe/AboutMe';
-import NoMatch from './../js/components/NoMatch/NoMatch';
+import Home from './js/components/Home/Home.js';
+import Gallery from './js/components/Gallery/Gallery.js';
+import AboutMe from './js/components/AboutMe/AboutMe.js';
+import NoMatch from './js/components/NoMatch/NoMatch.js';
 
 //dont need the return or extra div
 //because of the switch component

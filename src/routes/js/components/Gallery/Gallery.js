@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 
-import TitleHeader from './../titleHeader.jsx';
-import SideNavPage from './../navbarVertical.jsx';
+import TitleHeader from './../titleHeader.js';
+import SideNavPage from './../navbarVertical.js';
 
 class Gallery extends Component {
   constructor(props){

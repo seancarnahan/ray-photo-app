@@ -1,10 +1,10 @@
 import React,{Component} from 'react';
 import {Image, Grid} from 'react-bootstrap';
 
-import TitleHeader from './../titleHeader.jsx';
-import BioInfo from './../bioInfo.jsx';
-import AboutMeNavbar from './../aboutMeNavbar.jsx';
-import Contact from './../contact.jsx';
+import TitleHeader from './../titleHeader.js';
+import BioInfo from './../bioInfo.js';
+import AboutMeNavbar from './../aboutMeNavbar.js';
+import Contact from './../contact.js';
 
 class AboutMe extends Component{
   constructor(props){
