@@ -76,15 +76,27 @@ ul.navbar-wrapper {
   font-size: 17px;
 }
 
-li.nav-item{
+li.nav-item {
   display:inline-block;
   margin-right:30px;
   color: black;
 }
 
-li.nav-item:hover{
+li.nav-item:hover {
   display:inline-block;
   margin-right:30px;
+  color: grey;
+}
+
+.nav>li>a {
+  color: black;
+}
+
+.nav>li>a:hover {
+  color: black;
+}
+
+.dropdown-menu>li>a:hover {
   color: grey;
 }
 

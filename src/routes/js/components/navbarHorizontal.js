@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-
 import { Grid } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+
+import RoutedDropdown from './routedDropdown.js';
 
 class NavbarHorizontal extends Component {
   constructor(props){
     super(props);
 
   }
-
   render(){
     return(
       <Grid>
@@ -20,20 +20,17 @@ class NavbarHorizontal extends Component {
           }}>
             <li className="nav-item">Home</li>
           </Link>
+          <li className="nav-item">
+            <RoutedDropdown/>
+          </li>
           <Link to={{
-             pathname: "/gallery",
-             state: {selectedPage: 'travel'}
-          }}>
-            <li className="nav-item travel-drop">Travel</li>
-          </Link>
-          <Link to={{
-             pathname: "/gallery",
+             pathname: "/sunsets",
              state: {selectedPage: 'sunsets'}
           }}>
             <li className="nav-item">Sunsets</li>
           </Link>
           <Link to={{
-             pathname: "/gallery",
+            pathname: "/friends",
             state: {selectedPage: 'friends'}
           }}>
             <li className="nav-item">Friends</li>
