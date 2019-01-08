@@ -108,22 +108,35 @@ li.nav-item:hover {
   color: grey;
 }
 
-.vertical-navbar_wrapper {
-  width: 25%;
-  text-align:center;
-  margin-bottom: 20px;
-  float: left;
-  font-size: 17px;
+ul.vertical-navbar_wrapper {
+  margin: 0;
+  padding: 0;
+  float: center;
+
 }
 
 li.vertical-nav_item {
   display:block;
   color: black;
+  font-size: 20px;
 }
 
 li.vertical-nav_item:hover {
   display:block;
   color: black;
+  font-size: 20px;
+}
+
+li.vertical-nav_dropdown: {
+  display:block;
+  color: black;
+  font-size: 20px;
+}
+
+li.vertical-nav_dropdown:hover {
+  display:block;
+  color: black;
+  font-size: 20px;
 }
 
 

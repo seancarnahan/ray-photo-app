@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import RoutedDropdown from './routedDropdown.js';
 
-class SideNavPage extends React.Component {
+class NavbarVertical extends React.Component {
   constructor(props) {
     super(props);
 
@@ -12,7 +12,6 @@ class SideNavPage extends React.Component {
   }
   render(){
     return(
-      <Grid>
         <ul className="vertical-navbar_wrapper">
           <Link to={{
              pathname: '/home',
@@ -41,10 +40,14 @@ class SideNavPage extends React.Component {
           }}>
             <li className="vertical-nav_item">About Me</li>
           </Link>
+          <li className="vertical-nav_item">
+            <address>
+              Email: <a href="mailto:rhadnett@gmail.com">Rhadnett@gmail.com</a>
+            </address>
+          </li>
+          <li className="vertical-nav_item">Phone: (424) 241-9249</li>
         </ul>
-      </Grid>
-
     );
   }
 }
-export default SideNavPage;
+export default NavbarVertical;

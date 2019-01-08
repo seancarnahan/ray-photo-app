@@ -7,7 +7,7 @@ export default class GalleryViewer extends Component{
     super(props);
 
   }
-  
+
   componentDidMount() {
     const albumDirectory = "cd ./../../../../build/assets/photos/Friends || exit; ls -d -- */ | grep 'page-*' | wc -l";
   }
@@ -15,9 +15,9 @@ export default class GalleryViewer extends Component{
   render(){
 
     return(
-      <Grid>
-        <Image className="photo-sizing_box" alt="cant find image 1" src="assets/featured-photos/fp__photo4.jpg"/>
-      </Grid>
+      
+      <Image className="photo-sizing_box" alt="cant find image 1" src="assets/featured-photos/fp__photo4.jpg"/>
+
     );
   }
 
