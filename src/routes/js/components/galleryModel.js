@@ -3,6 +3,7 @@ import {Grid, Row, Col} from 'react-bootstrap';
 
 import TitleHeader from './titleHeader.js';
 import SideNavPage from './navbarVertical.js';
+import GalleryViewer from './galleryViewer.js';
 
 class GalleryModel extends Component {
   constructor(props){
@@ -23,10 +24,12 @@ class GalleryModel extends Component {
           </Col>
         </Row>
         <Row className="grid-size">
-          <Col xs={6} md={4} className="vertical-navabr__wrapper">
+          <Col xs={4} md={2} className="vertical-navabr__wrapper">
             <SideNavPage/>
           </Col>
-          <Col xs={12} md={8} className="photo-gallery__container"/>
+          <Col xs={12} md={8} className="photo-gallery__container">
+            <GalleryViewer albumType={this.props.albumType}/>
+          </Col>
         </Row>
       </div>
     );
