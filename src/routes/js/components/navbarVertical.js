@@ -1,8 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Fa, SideNavItem, SideNavCat, SideNavNav, SideNav, SideNavLink, Container, Row } from 'mdbreact';
+import { Grid } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
-//https://mdbootstrap.com/react/advanced/sidenav/
+import RoutedDropdown from './routedDropdown.js';
+
 class SideNavPage extends React.Component {
   constructor(props) {
     super(props);
@@ -11,11 +12,38 @@ class SideNavPage extends React.Component {
   }
   render(){
     return(
-      <div className="container">
-        <h1>
-          Testing sidebar nav location
-        </h1>
-      </div>    
+      <Grid>
+        <ul className="vertical-navbar_wrapper">
+          <Link to={{
+             pathname: '/home',
+             state: {selectedPage: 'home'}
+          }}>
+            <li className="vertical-nav_item">Home</li>
+          </Link>
+          <li className="vertical-nav_item">
+            <RoutedDropdown/>
+          </li>
+          <Link to={{
+             pathname: "/sunsets",
+             state: {selectedPage: 'sunsets'}
+          }}>
+            <li className="vertical-nav_item">Sunsets</li>
+          </Link>
+          <Link to={{
+            pathname: "/friends",
+            state: {selectedPage: 'friends'}
+          }}>
+            <li className="vertical-nav_item">Friends</li>
+          </Link>
+          <Link to={{
+            pathname: "/about-me",
+            state: {selectedPage: 'about-me'}
+          }}>
+            <li className="vertical-nav_item">About Me</li>
+          </Link>
+        </ul>
+      </Grid>
+
     );
   }
 }

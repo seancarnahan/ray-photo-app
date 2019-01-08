@@ -68,6 +68,14 @@ body{
 	font-size: 18px;
 }
 
+
+
+
+
+
+
+
+
 ul.navbar-wrapper {
   width:100%;
   height:20px;
@@ -99,6 +107,32 @@ li.nav-item:hover {
 .dropdown-menu>li>a:hover {
   color: grey;
 }
+
+.vertical-navbar_wrapper {
+  width: 25%;
+  text-align:center;
+  margin-bottom: 20px;
+  float: left;
+  font-size: 17px;
+}
+
+li.vertical-nav_item {
+  display:block;
+  color: black;
+}
+
+li.vertical-nav_item:hover {
+  display:block;
+  color: black;
+}
+
+
+
+
+
+
+
+
 
 .aboutMe__wrapper {
   margin: 0;
@@ -273,7 +307,7 @@ nav.navbar, .navbar-default {
 .photo-sizing_box {
     position: relative;
     float: right;
-    width: 80%;
+    width: 100%;
     height: 100%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
