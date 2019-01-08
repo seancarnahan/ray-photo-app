@@ -116,18 +116,39 @@ ul.vertical-navbar_wrapper {
 }
 
 li.vertical-nav_item {
+  padding-left: 18px;
+  padding-bottom: 20px;
   display:block;
   color: black;
   font-size: 20px;
+  text-decoration: none;
 }
 
 li.vertical-nav_item:hover {
   display:block;
-  color: black;
+  color: grey;
   font-size: 20px;
+  text-decoration: none;
 }
 
-li.vertical-nav_dropdown: {
+li.vertical-nav_item-sunsets {
+  padding-left: 18px;
+  padding-bottom: 20px;
+  padding-top: 12px;
+  display:block;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+li.vertical-nav_item-sunsets:hover {
+  display:block;
+  color: grey;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+li.vertical-nav_dropdown {
   display:block;
   color: black;
   font-size: 20px;
@@ -139,10 +160,18 @@ li.vertical-nav_dropdown:hover {
   font-size: 20px;
 }
 
+address.vertical-nav_item-email {
+  margin: 0;
+  padding: 0;
+}
 
+a.vertical-nav_item-email-address {
+  color: black;
+}
 
-
-
+a.vertical-nav_item-email-address:hover {
+  color: grey;
+}
 
 
 

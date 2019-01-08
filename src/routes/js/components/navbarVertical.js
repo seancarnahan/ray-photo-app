@@ -13,20 +13,19 @@ class NavbarVertical extends React.Component {
   render(){
     return(
         <ul className="vertical-navbar_wrapper">
+          <hr className="style15"/>
           <Link to={{
              pathname: '/home',
              state: {selectedPage: 'home'}
           }}>
             <li className="vertical-nav_item">Home</li>
           </Link>
-          <li className="vertical-nav_item">
-            <RoutedDropdown/>
-          </li>
+          <li className="vertical-nav_dropdown"><RoutedDropdown/></li>
           <Link to={{
              pathname: "/sunsets",
              state: {selectedPage: 'sunsets'}
           }}>
-            <li className="vertical-nav_item">Sunsets</li>
+            <li className="vertical-nav_item-sunsets">Sunsets</li>
           </Link>
           <Link to={{
             pathname: "/friends",
@@ -41,8 +40,8 @@ class NavbarVertical extends React.Component {
             <li className="vertical-nav_item">About Me</li>
           </Link>
           <li className="vertical-nav_item">
-            <address>
-              Email: <a href="mailto:rhadnett@gmail.com">Rhadnett@gmail.com</a>
+            <address className="vertical-nav_item-email">
+              Email: <a className="vertical-nav_item-email-address" href="mailto:rhadnett@gmail.com">Rhadnett@gmail.com</a>
             </address>
           </li>
           <li className="vertical-nav_item">Phone: (424) 241-9249</li>
