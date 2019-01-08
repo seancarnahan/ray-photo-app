@@ -269,3 +269,13 @@ nav.navbar, .navbar-default {
 .album-header__container {
   padding-top: 4em;
 }
+
+.photo-sizing_box {
+    position: relative;
+    float: right;
+    width: 80%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

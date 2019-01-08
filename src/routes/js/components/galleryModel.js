@@ -24,10 +24,10 @@ class GalleryModel extends Component {
           </Col>
         </Row>
         <Row className="grid-size">
-          <Col xs={4} md={2} className="vertical-navabr__wrapper">
+          <Col xs={4} md={1} className="vertical-navbar__wrapper">
             <SideNavPage/>
           </Col>
-          <Col xs={12} md={8} className="photo-gallery__container">
+          <Col xs={12} md={12} className="photo-gallery__container">
             <GalleryViewer albumType={this.props.albumType}/>
           </Col>
         </Row>
