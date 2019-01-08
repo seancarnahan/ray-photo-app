@@ -1,26 +1,14 @@
 import React,{Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 
-import TitleHeader from './../titleHeader.js';
-import SideNavPage from './../navbarVertical.js';
+import TitleHeader from './titleHeader.js';
+import SideNavPage from './navbarVertical.js';
 
-class Gallery extends Component {
+class GalleryModel extends Component {
   constructor(props){
     super(props);
 
-    this.state = { albumType: '' };
   }
-
-  componentDidMount() {
-    const {selectedPage} = this.props.location.state;
-
-    if (selectedPage !== 'undefined') {
-      this.setState({
-        albumType: selectedPage
-      });
-    }
-  }
-
 
   render(){
     return(
@@ -30,7 +18,7 @@ class Gallery extends Component {
           <Col xs={6} md={4}/>
           <Col xs={12} md={8}>
             <h1 className="album-header__default">
-              {this.state.albumType}
+              {this.props.albumType}
             </h1>
           </Col>
         </Row>
@@ -45,4 +33,4 @@ class Gallery extends Component {
   }
 }
 
-export default Gallery;
+export default GalleryModel;

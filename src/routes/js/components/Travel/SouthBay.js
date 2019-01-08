@@ -1,17 +1,17 @@
 import React, {Component} from 'react';
 
+import GalleryModel from './../galleryModel.js'
+
 class SouthBay extends Component {
   constructor(props) {
     super(props);
 
+    this.state = { albumType: 'south bay' };
   }
+
   render() {
     return (
-      <div>
-        <p>
-          Travel --->> South Bay
-        </p>
-      </div>
+      <GalleryModel albumType={this.state.albumType} />
     );
   }
 }
