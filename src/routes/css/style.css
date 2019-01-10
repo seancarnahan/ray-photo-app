@@ -347,6 +347,7 @@ nav.navbar, .navbar-default {
 }
 
 .photo-sizing_box {
+    border:1px solid #021a40;
     position: relative;
     float: right;
     width: 100%;

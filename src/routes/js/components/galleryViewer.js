@@ -14,9 +14,12 @@ export default class GalleryViewer extends Component{
 
   render(){
 
-    return(
-      
-      <Image className="photo-sizing_box" alt="cant find image 1" src="assets/featured-photos/fp__photo4.jpg"/>
+    return (
+      <div >
+        <Image className="photo-sizing_box" alt="cant find image 1" src="assets/featured-photos/fp__photo4.jpg"/>
+        <a>
+        </a>
+      </div>
 
     );
   }
