@@ -321,6 +321,21 @@ nav.navbar, .navbar-default {
     -28px 56px 1px #e4e3e2;
 }
 
+.contact_submit-button {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #4CAF50;
+  border: none;
+  border-color: none
+
+}
+
+
 .grid-size{
   margin: 0;
   padding: 0;
@@ -361,7 +376,6 @@ nav.navbar, .navbar-default {
 .footer_panel-container {
   margin: 0;
   padding: 0;
-
   bottom: 0px;
   padding-top: 100px;
   width: 100%;
