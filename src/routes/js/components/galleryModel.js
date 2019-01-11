@@ -4,6 +4,7 @@ import {Grid, Row, Col} from 'react-bootstrap';
 import TitleHeader from './titleHeader.js';
 import NavbarVertical from './navbarVertical.js';
 import GalleryViewer from './galleryViewer.js';
+import FooterContent from './footerContent.js';
 
 class GalleryModel extends Component {
   constructor(props){
@@ -33,6 +34,7 @@ class GalleryModel extends Component {
             </Col>
           </Row>
         </Grid>
+        <FooterContent/>
       </div>
     );
   }

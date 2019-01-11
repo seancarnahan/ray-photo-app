@@ -5,6 +5,7 @@ import TitleHeader from './../titleHeader.js';
 import BioInfo from './../bioInfo.js';
 import AboutMeNavbar from './../aboutMeNavbar.js';
 import Contact from './../contact.js';
+import FooterContent from './../footerContent.js';
 
 class AboutMe extends Component{
   constructor(props){
@@ -23,6 +24,7 @@ class AboutMe extends Component{
         </Grid>
         <BioInfo/>
         <Contact/>
+        <FooterContent/>
       </div>
     );
   }
